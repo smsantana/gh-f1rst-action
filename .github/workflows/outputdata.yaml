@@ -1,8 +1,10 @@
-name: outputmetadata
+name: Output Metadata
+
 on: [workflow_dispatch]
+
 jobs:
   output:
     runs-on: ubuntu-latest
     steps:
       - name: Print metadata
-        run: echo "${{ toJson(github)}}"
+        run: echo "${{ toJson(github) }}"
